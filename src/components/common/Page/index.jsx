@@ -6,7 +6,7 @@ import Header from 'common/Header';
 import Footer from 'common/Footer';
 
 const StyledPage = styled.div`
-  ${'' /* font-family: ${(props) => props.theme.fonts.sourcesans}; */}
+  font-family: ${(props) => props.theme.fonts.raleway};
 `;
 
 const Page = ({ children }) => (
