@@ -14,11 +14,11 @@ const Container = styled.div`
   `}
 
   ${media.desktop`
-    max-width: ${sizes.desktop - 50}px;
+    max-width: ${sizes.desktop - 400}px;
   `}
 
   ${media.large`
-    max-width: ${sizes.large - 50}px;
+    max-width: ${sizes.large - 400}px;
   `}
 `;
 
