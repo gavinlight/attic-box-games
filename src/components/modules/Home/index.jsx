@@ -1,5 +1,11 @@
 import React from 'react';
 
-const Home = () => <h1>Attic Box Games</h1>;
+import Page from 'common/Page';
+
+const Home = () => (
+  <Page>
+    <h1>Attic Box Games</h1>
+  </Page>
+);
 
 export default Home;
