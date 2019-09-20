@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import { Link } from 'react-router-dom';
-
 export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -13,7 +11,11 @@ export const HeaderContainer = styled.div`
   color: ${(props) => props.theme.colors.white};
 `;
 
-export const HeaderLink = styled(Link)`
-  font-size: 20px;
-  text-decoration: none;
+export const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+
+  & img {
+    margin-right: 20px;
+  }
 `;
