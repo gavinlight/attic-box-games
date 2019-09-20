@@ -5,7 +5,7 @@ import { StyledA, StyledLink } from './styled';
 
 const Anchor = ({ external, to, children }) => (
   external ? (
-    <StyledA href={to} taget="_blank" rel="noopener noreferrer">
+    <StyledA href={to} target="_blank" rel="noopener noreferrer">
       {children}
     </StyledA>
   ) : (
