@@ -7,8 +7,9 @@ export const HeaderContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  padding: 46px 32px;
+  padding: 32px 46px;
   color: ${(props) => props.theme.colors.white};
+  z-index: 1;
 `;
 
 export const LogoContainer = styled.div`

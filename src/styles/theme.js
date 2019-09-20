@@ -1,7 +1,9 @@
 export default {
   colors: {
     white: '#ffffff',
-    grey: '#FAFAFA',
+    grey: Object.assign('#FAFAFA', {
+      dark: '#AAAAAA',
+    }),
     black: '#000000',
   },
   fonts: {
