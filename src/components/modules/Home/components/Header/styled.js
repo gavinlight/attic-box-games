@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import PT from 'prop-types';
 
 export const HeaderContainer = styled.div`
   position: relative;
@@ -25,8 +26,32 @@ export const Title = styled.h3`
 export const Image = styled.div`
   position: absolute;
   right: 0;
-  bottom: -80px;
+  bottom: -120px;
   width: 190px;
   height: 190px;
   background-color: ${(props) => props.theme.colors.grey.dark};
+
+  ${(props) => props.image && css`
+    background-image: url(${props.image});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  `}
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 60px 60px;
+    border-color: transparent transparent #ffffff transparent;
+  }
 `;
+
+Image.propTypes = {
+  src: PT.string.isRequired,
+};
