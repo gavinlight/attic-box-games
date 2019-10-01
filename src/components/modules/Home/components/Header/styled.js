@@ -5,7 +5,7 @@ import headerSvg from 'vectors/header.svg?external';
 
 export const HeaderContainer = styled.div`
   position: relative;
-  padding: 130px 0 40px;
+  padding: 150px 0 40px;
   color: ${(props) => props.theme.colors.white};
   background-color: ${(props) => props.theme.colors.black};
   background-image: url(${headerSvg});
@@ -17,7 +17,7 @@ export const HeaderContainer = styled.div`
 export const Quote = styled.h1`
   margin: 0 0 50px;
   font-weight: 400;
-  line-height: 1.4em;
+  line-height: 1.3em;
 `;
 
 export const Name = styled.h2`
