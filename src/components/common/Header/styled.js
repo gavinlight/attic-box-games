@@ -1,19 +1,23 @@
 import styled from 'styled-components';
 
-import { Link } from 'react-router-dom';
-
 export const HeaderContainer = styled.div`
   display: flex;
+  align-items: center;
   justify-content: space-between;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 46px 32px;
+  padding: 32px 46px;
   color: ${(props) => props.theme.colors.white};
+  z-index: 1;
 `;
 
-export const HeaderLink = styled(Link)`
-  font-size: 20px;
-  text-decoration: none;
+export const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+
+  & img {
+    margin-right: 20px;
+  }
 `;

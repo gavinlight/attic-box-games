@@ -2,9 +2,12 @@ import React from 'react';
 
 import Page from 'common/Page';
 
+import Header from './components/Header';
+
 const Home = () => (
   <Page>
-    <h1>Attic Box Games</h1>
+    <Header />
+    <div style={{ height: '50vh' }} />
   </Page>
 );
 
