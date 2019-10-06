@@ -103,6 +103,7 @@ const baseConfig = {
       services: paths.resolveSrc('services'),
       styles: paths.resolveSrc('styles'),
       vectors: paths.resolveSrc('static/vectors'),
+      models: paths.resolveSrc('static/models'),
     },
   },
 };
