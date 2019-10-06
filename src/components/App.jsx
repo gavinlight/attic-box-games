@@ -6,9 +6,10 @@ import Loader from 'common/Loader';
 
 const Home = lazy(() => import('modules/Home'));
 
-const App = () => (
+const App = ({ location }) => (
   <main>
     <GlobalStyle />
+    <Loader path={location.pathname} />
     <Suspense fallback={<Loader />}>
       <Switch>
         <Route path="/" component={Home} exact />
