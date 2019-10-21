@@ -5,4 +5,10 @@ export const FooterContainer = styled.div`
   background-color: ${(props) => props.theme.colors.grey};
   font-size: 30px;
   line-height: 46px;
+
+  & img {
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+  }
 `;
