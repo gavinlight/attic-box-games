@@ -1,27 +1,26 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import Container from 'common/Container';
+import Anchor from 'common/Anchor';
 
-import { GridContainer, Link, LinkLabel, LinkUrl } from './styled';
+import { GridContainer, Link, LinkLabel, Break } from './styled';
 import data from './data';
 
 const Content = () => (
   <Container>
     <GridContainer>
-      {data.map((link) => (
-        <Link key={link.label}>
-          <LinkLabel>{link.label}</LinkLabel>
-          {link.links.map((url) => (
-            <LinkUrl
-              key={url.label}
-              href={url.label}
-              target="blank"
-              rel="noopener noreferrer"
-            >
-              {url.link}
-            </LinkUrl>
-          ))}
-        </Link>
+      {data.map((link, index) => (
+        <Fragment key={link.label}>
+          {index === 2 && <Break />}
+          <Link>
+            <LinkLabel>{link.label}</LinkLabel>
+            {link.links.map((url) => (
+              <Anchor key={url.link} to={url.link} external>
+                {url.label}
+              </Anchor>
+            ))}
+          </Link>
+        </Fragment>
       ))}
     </GridContainer>
   </Container>

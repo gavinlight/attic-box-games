@@ -11,11 +11,11 @@ const Header = () => (
   <HeaderContainer>
     <LogoContainer>
       <Logo size="33px" />
-      <Anchor to="/">
+      <Anchor to="/" color="white">
         Attic Box Games
       </Anchor>
     </LogoContainer>
-    <Anchor to={data.seek} external>
+    <Anchor to={data.seek} external color="white">
       Seek
     </Anchor>
   </HeaderContainer>
