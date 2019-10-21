@@ -5,7 +5,7 @@ import { StyledA } from 'common/Anchor/styled';
 export const GridContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: 60px 0 100px;
+  margin: 60px 0 80px;
 `;
 
 export const Link = styled.div`
