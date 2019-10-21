@@ -3,13 +3,18 @@ import PT from 'prop-types';
 
 import { StyledA, StyledLink } from './styled';
 
-const Anchor = ({ external, to, children }) => (
+const Anchor = ({ external, to, color, children }) => (
   external ? (
-    <StyledA href={to} target="_blank" rel="noopener noreferrer">
+    <StyledA
+      href={to}
+      color={color}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {children}
     </StyledA>
   ) : (
-    <StyledLink to={to}>
+    <StyledLink to={to} color={color}>
       {children}
     </StyledLink>
   )
@@ -18,10 +23,15 @@ const Anchor = ({ external, to, children }) => (
 Anchor.propTypes = {
   external: PT.bool,
   to: PT.string,
+  color: PT.oneOf(['black', 'white']),
   children: PT.oneOfType([
     PT.arrayOf(PT.node),
     PT.node,
   ]),
+};
+
+Anchor.defaultProps = {
+  color: 'black',
 };
 
 export default Anchor;

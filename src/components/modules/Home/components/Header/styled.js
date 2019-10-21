@@ -60,5 +60,5 @@ export const Image = styled.div`
 `;
 
 Image.propTypes = {
-  src: PT.string.isRequired,
+  image: PT.string.isRequired,
 };

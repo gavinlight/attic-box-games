@@ -9,7 +9,6 @@ export const HeaderContainer = styled.div`
   left: 0;
   width: 100%;
   padding: 32px 46px;
-  color: ${(props) => props.theme.colors.white};
   z-index: 1;
 `;
 
