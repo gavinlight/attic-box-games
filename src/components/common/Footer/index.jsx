@@ -8,7 +8,7 @@ import { FooterContainer } from './styled';
 const Footer = () => (
   <FooterContainer>
     <Container>
-      Questions about our team, Seek or anything else? Contact us via <Anchor to="qwerwer">mail</Anchor> or <Anchor to="erewr">Facebook</Anchor>
+      Questions about our team, Seek or anything else? Contact us via <Anchor to="qwerwer" reversed>mail</Anchor> or <Anchor to="erewr" reversed>Facebook</Anchor>
     </Container>
   </FooterContainer>
 );
