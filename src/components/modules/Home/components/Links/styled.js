@@ -20,7 +20,7 @@ export const Link = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 250px;
+  width: 100%;
   margin-bottom: 60px;
 
   & ${StyledA} {
