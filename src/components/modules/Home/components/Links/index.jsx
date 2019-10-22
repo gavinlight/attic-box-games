@@ -6,7 +6,7 @@ import Anchor from 'common/Anchor';
 import { GridContainer, Link, LinkLabel, Break } from './styled';
 import data from './data';
 
-const Content = () => (
+const Links = () => (
   <Container>
     <GridContainer>
       {data.map((link, index) => (
@@ -26,4 +26,4 @@ const Content = () => (
   </Container>
 );
 
-export default Content;
+export default Links;

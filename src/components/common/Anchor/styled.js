@@ -17,15 +17,24 @@ const AnchorStyling = css`
     height: 2px;
     background-color: ${(props) => props.theme.colors[props.color]};
     transition: 200ms width;
+
+    ${(props) => props.reversed && css`
+      width: 100%;
+    `}
   }
 
   &:hover:after {
     width: 100%;
+
+    ${(props) => props.reversed && css`
+      width: 0;
+    `}
   }
 `;
 
 const propTypes = {
   color: PT.oneOf(['black', 'white']),
+  reversed: PT.bool,
 };
 
 export const StyledA = styled.a`

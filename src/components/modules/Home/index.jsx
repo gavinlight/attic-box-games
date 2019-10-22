@@ -3,12 +3,12 @@ import React from 'react';
 import Page from 'common/Page';
 
 import Header from './components/Header';
-import Content from './components/Content';
+import Links from './components/Links';
 
 const Home = () => (
   <Page>
     <Header />
-    <Content />
+    <Links />
   </Page>
 );
 
