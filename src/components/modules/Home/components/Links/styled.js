@@ -1,19 +1,25 @@
 import styled from 'styled-components';
+import { media } from 'styles/utils';
 
 import { StyledA } from 'common/Anchor/styled';
 
 export const GridContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   margin: 60px 0 60px;
+
+  ${media.tablet`
+    flex-wrap: wrap;
+    flex-direction: row;
+  `}
 `;
 
 export const Link = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 33%;
-  padding-right: 60px;
+  width: 200px;
   margin-bottom: 60px;
 
   & ${StyledA} {
@@ -26,6 +32,11 @@ export const Link = styled.div`
       margin-bottom: 0;
     }
   }
+
+  ${media.tablet`
+    padding-right: 60px;
+    width: 33%;
+  `}
 `;
 
 export const LinkLabel = styled.p`
