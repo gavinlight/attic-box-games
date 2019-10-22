@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 
   html {
     box-sizing: border-box;
