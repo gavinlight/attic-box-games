@@ -11,7 +11,7 @@ const Footer = () => (
     <Container>
       Questions about our team, Seek or anything else? <br />
       Contact us via <Anchor to="qwerwer" reversed>mail</Anchor> or <Anchor to="erewr" reversed>Facebook</Anchor>
-      <Logo size="60" />
+      <Logo size="40" />
     </Container>
   </FooterContainer>
 );

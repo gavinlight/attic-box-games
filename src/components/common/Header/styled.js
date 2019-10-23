@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from 'styles/utils';
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -8,8 +9,13 @@ export const HeaderContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  padding: 32px 46px;
+  padding: 32px 28px;
   z-index: 1;
+
+  ${media.tablet`
+    padding-left: 46px;
+    padding-right: 46px;
+  `}
 `;
 
 export const LogoContainer = styled.div`
@@ -19,4 +25,18 @@ export const LogoContainer = styled.div`
   & img {
     margin-right: 20px;
   }
+`;
+
+export const LogoText = styled.span`
+  display: none;
+
+  ${media.tablet`
+    display: inline;
+  `}
+`;
+
+export const LogoTextMobile = styled.span`
+  ${media.tablet`
+    display: none;
+  `}
 `;
