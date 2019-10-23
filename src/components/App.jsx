@@ -1,22 +1,19 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import PT from 'prop-types';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import GlobalStyle from 'styles';
 
 import Loader from 'common/Loader';
-
-const Profile = lazy(() => import('modules/Profile'));
+import Profile from 'modules/Profile';
 
 const App = ({ location }) => (
   <main>
     <GlobalStyle />
-    <Suspense fallback={<Loader />}>
-      <Loader path={location.pathname}>
-        <Switch>
-          <Route path="/member/:name" component={Profile} exact />
-        </Switch>
-      </Loader>
-    </Suspense>
+    <Loader path={location.pathname}>
+      <Switch>
+        <Route path="/member/:name" component={Profile} exact />
+      </Switch>
+    </Loader>
   </main>
 );
 
