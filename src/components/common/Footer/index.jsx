@@ -14,7 +14,9 @@ const Footer = () => (
       Questions about our team, Seek or anything else? <br />
       Contact us via <Anchor to={data.mail} external reversed>mail</Anchor> or&nbsp;
       <Anchor to={data.facebook} external reversed>Facebook</Anchor>
-      <Logo size="40" />
+      <Anchor to="/" border={false}>
+        <Logo size="40" />
+      </Anchor>
     </Container>
   </FooterContainer>
 );
