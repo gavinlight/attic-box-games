@@ -1,15 +1,15 @@
 import React from 'react';
+import PT from 'prop-types';
 
 import Container from 'common/Container';
 import Anchor from 'common/Anchor';
 
 import { GridContainer, Link, LinkLabel } from './styled';
-import data from './data';
 
-const Links = () => (
+const Links = ({ links }) => (
   <Container>
     <GridContainer>
-      {data.map((link, index) => (
+      {links.map((link, index) => (
         <Link key={link.label}>
           <LinkLabel>{link.label}</LinkLabel>
           {link.links.map((url) => (
@@ -22,5 +22,15 @@ const Links = () => (
     </GridContainer>
   </Container>
 );
+
+Links.propTypes = {
+  links: PT.arrayOf(PT.shape({
+    label: PT.string,
+    links: PT.arrayOf(PT.shape({
+      label: PT.string,
+      link: PT.string,
+    })),
+  })),
+};
 
 export default Links;

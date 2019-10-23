@@ -1,3 +1,8 @@
+import memberData from 'services/memberData';
+
 export default {
-  seek: 'http://www.atticboxgames.com/games/seek',
+  seek: 'https://www.atticboxgames.com',
+  mail: 'mailto:info@atticboxgames.com',
+  facebook: 'https://www.facebook.com/AtticBoxGames/',
+  members: memberData,
 };

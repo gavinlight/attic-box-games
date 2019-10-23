@@ -21,6 +21,10 @@ const AnchorStyling = css`
     ${(props) => props.reversed && css`
       width: 100%;
     `}
+
+    ${(props) => !props.border && css`
+      display: none;
+    `}
   }
 
   &:hover:after {
@@ -35,6 +39,7 @@ const AnchorStyling = css`
 const propTypes = {
   color: PT.oneOf(['black', 'white']),
   reversed: PT.bool,
+  border: PT.bool,
 };
 
 export const StyledA = styled.a`
