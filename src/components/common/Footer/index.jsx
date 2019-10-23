@@ -1,14 +1,22 @@
 import React from 'react';
 
+import data from 'services/appData';
+
 import Container from 'common/Container';
 import Anchor from 'common/Anchor';
+import Logo from 'common/Logo';
 
 import { FooterContainer } from './styled';
 
 const Footer = () => (
   <FooterContainer>
     <Container>
-      Questions about our team, Seek or anything else? Contact us via <Anchor to="qwerwer">mail</Anchor> or <Anchor to="erewr">Facebook</Anchor>
+      Questions about our team, Seek or anything else? <br />
+      Contact us via <Anchor to={data.mail} external reversed>mail</Anchor> or&nbsp;
+      <Anchor to={data.facebook} external reversed>Facebook</Anchor>
+      <Anchor to="/" border={false}>
+        <Logo size="40" />
+      </Anchor>
     </Container>
   </FooterContainer>
 );
