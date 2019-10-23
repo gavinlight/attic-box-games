@@ -27,7 +27,7 @@ export default {
       label: 'instagram',
       links: [
         {
-          label: 'https://www.instagram.com/thatboyali',
+          label: 'www.instagram.com/thatboyali',
           link: 'https://https://www.instagram.com/thatboyali',
         },
       ],

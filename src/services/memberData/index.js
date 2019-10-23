@@ -1,10 +1,11 @@
-import gavin from './gavin';
+import ali from './ali';
 import brian from './brian';
 import collin from './collin';
-import ali from './ali';
+import danny from './danny';
+import gavin from './gavin';
+import jimmy from './jimmy';
 import nick from './nick';
 import tom from './tom';
-import danny from './danny';
 
 export default [
   danny,
@@ -14,4 +15,5 @@ export default [
   brian,
   ali,
   nick,
+  jimmy,
 ];
