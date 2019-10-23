@@ -6,10 +6,16 @@ import Anchor from 'common/Anchor';
 
 import { GridContainer, Link, LinkLabel } from './styled';
 
+const sort = (links) => links.sort((a, b) => {
+  if (a.label < b.label) { return -1; }
+  if (a.label > b.label) { return 1; }
+  return 0;
+});
+
 const Links = ({ links }) => (
   <Container>
     <GridContainer>
-      {links.map((link, index) => (
+      {sort(links).map((link, index) => (
         <Link key={link.label}>
           <LinkLabel>{link.label}</LinkLabel>
           {link.links.map((url) => (

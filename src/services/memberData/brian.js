@@ -20,8 +20,8 @@ export default {
       label: 'email',
       links: [
         {
-          label: 'gavin.ligthart@gmail.com',
-          link: 'mailto:gavin.ligthart@gmail.com',
+          label: 'brianharman@atticboxgames.com',
+          link: 'mailto:brianharman@atticboxgames.com',
         },
       ],
     },

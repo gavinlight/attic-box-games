@@ -9,17 +9,8 @@ export default {
       label: 'email',
       links: [
         {
-          label: 'collinwu@atticboxstudio.com',
-          link: 'mailto:collinwu@atticboxstudio.com',
-        },
-      ],
-    },
-    {
-      label: 'phone',
-      links: [
-        {
-          label: '+31 (0)6 43 40 38 89',
-          link: 'tel+31643403989',
+          label: 'collinwu@atticboxgames.com',
+          link: 'mailto:collinwu@atticboxgames.com',
         },
       ],
     },
