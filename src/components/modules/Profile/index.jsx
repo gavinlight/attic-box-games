@@ -10,8 +10,9 @@ import About from './components/About';
 
 const Profile = ({ match }) => {
   const profile = data.members.find((member) => member.slug === match.params.name);
+  if (!profile) return null;
 
-  return profile && (
+  return (
     <Page>
       <Header
         name={profile.name}
@@ -30,7 +31,7 @@ const Profile = ({ match }) => {
 Profile.propTypes = {
   match: PT.shape({
     params: PT.shape({
-      slug: PT.string,
+      name: PT.string,
     }),
   }),
 };

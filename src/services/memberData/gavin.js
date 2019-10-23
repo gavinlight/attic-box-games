@@ -23,10 +23,6 @@ export default {
           label: 'gavin.ligthart@gmail.com',
           link: 'mailto:gavin.ligthart@gmail.com',
         },
-        {
-          label: 'gavin@atticboxgames.com',
-          link: 'mailto:gavin@atticboxgames.com',
-        },
       ],
     },
     {
@@ -35,15 +31,6 @@ export default {
         {
           label: 'www.instagram.com/gavin_light',
           link: 'https://www.instagram.com/gavin_light',
-        },
-      ],
-    },
-    {
-      label: 'phone',
-      links: [
-        {
-          label: '+31 (0)6 11 39 30 20',
-          link: 'tel+31611393020',
         },
       ],
     },
@@ -57,15 +44,6 @@ export default {
       ],
     },
     {
-      label: 'facebook',
-      links: [
-        {
-          label: 'www.facebook.com/gavin.ligthart',
-          link: 'https://www.facebook.com/gavin.ligthart',
-        },
-      ],
-    },
-    {
       label: 'soundcloud',
       links: [
         {
@@ -75,5 +53,5 @@ export default {
       ],
     },
   ],
-  about: '<p>Ik ben Gavin Ligthart, digital brand manager, webdeveloper en consultant bij Attic Box Studio. Sinds 2014 help ik Attic Box bij alles web en design. Ik ben afgestudeerd aan CMD Amsterdam in de zomer van 2015, en werk sinds dien in het veld als creative developer en technical lead</p>',
+  about: '<p>Ik ben Gavin Ligthart, digital brand manager, webdeveloper en consultant bij Attic Box Studio. Sinds 2014 help ik Attic Box bij alles web en design. Ik ben afgestudeerd aan CMD Amsterdam in de zomer van 2015, en werk sinds dien in het veld als creative developer en technical lead</p><p>My name is Gavin Ligthart, digital brand manager, webdeveloper and consultant at Attic Box Studio. I\'ve been helping Attic Box with everything regarding to brand, website and design since 2014. I graduated from CMD Amsterdam in the summer of 2015 and I\'m currently working as a creative developer and technical lead.</p>',
 };
