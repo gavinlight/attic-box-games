@@ -16,7 +16,8 @@ export const Heading = styled.h3`
   max-width: 100px;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
+  margin-top: 0;
 
   ${media.tablet`
     display: flex;
@@ -29,6 +30,7 @@ export const Heading = styled.h3`
 
 export const Text = styled.div`
   line-height: 2.2em;
+  font-size: 14px;
 
   & p {
     margin: 0 0 20px;

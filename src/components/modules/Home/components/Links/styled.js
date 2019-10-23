@@ -7,12 +7,16 @@ export const GridContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 60px 0 60px;
+  margin: 60px 0 30px;
 
   ${media.mobile`
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
+  `}
+
+  ${media.tablet`
+    margin-bottom: 60px;
   `}
 `;
 
