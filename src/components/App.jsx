@@ -10,11 +10,12 @@ const Profile = lazy(() => import('modules/Profile'));
 const App = ({ location }) => (
   <main>
     <GlobalStyle />
-    <Loader path={location.pathname} />
     <Suspense fallback={<Loader />}>
-      <Switch>
-        <Route path="/member/:name" component={Profile} exact />
-      </Switch>
+      <Loader path={location.pathname}>
+        <Switch>
+          <Route path="/member/:name" component={Profile} exact />
+        </Switch>
+      </Loader>
     </Suspense>
   </main>
 );

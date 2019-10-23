@@ -8,11 +8,11 @@ export default (p5) => {
 
   p5.preload = () => {
     model = p5.loadModel(cube);
-  }
+  };
 
   p5.setup = () => {
     p5.createCanvas(innerWidth, innerHeight, p5.WEBGL);
-  }
+  };
 
   p5.draw = () => {
     p5.background(242);
@@ -27,5 +27,5 @@ export default (p5) => {
     p5.scale(0.8);
     p5.model(model);
     p5.normalMaterial();
-  }
-}
+  };
+};
