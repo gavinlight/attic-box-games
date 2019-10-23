@@ -9,13 +9,13 @@ const Loader = ({ path = '/', children }) => {
   const [active, setActive] = React.useState(true);
   React.useEffect(() => {
     setActive(true);
-    setTimeout(() => setActive(false), 1000);
+    setTimeout(() => setActive(false), 750);
   }, [path]);
 
   return (
     <>
       <LoaderContainer active={active}>
-        {active && <P5Wrapper sketch={sketch} />}
+        <P5Wrapper sketch={sketch} />
       </LoaderContainer>
       {!active && children}
     </>
