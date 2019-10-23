@@ -5,7 +5,7 @@ export const LoaderContainer = styled.div`
   top: 0;
   left: 0;
   z-index: 2;
-  transition: 300ms opacity;
+  transition: 250ms opacity;
   opacity: 0;
   pointer-events: none;
 

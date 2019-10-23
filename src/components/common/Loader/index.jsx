@@ -7,15 +7,20 @@ import sketch from './sketch';
 
 const Loader = ({ path = '/', children }) => {
   const [active, setActive] = React.useState(true);
+  const [show, setShow] = React.useState(true);
+
   React.useEffect(() => {
     setActive(true);
-    setTimeout(() => setActive(false), 1000);
+    setShow(true);
+
+    setTimeout(() => setActive(false), 750);
+    setTimeout(() => setShow(false), 1000);
   }, [path]);
 
   return (
     <>
       <LoaderContainer active={active}>
-        {active && <P5Wrapper sketch={sketch} />}
+        {show && <P5Wrapper sketch={sketch} />}
       </LoaderContainer>
       {!active && children}
     </>
