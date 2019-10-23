@@ -9,7 +9,11 @@ import Links from './components/Links';
 import About from './components/About';
 
 const Profile = ({ match }) => {
-  const profile = data.members.find((member) => member.slug === match.params.name);
+  const [profile, setProfile] = React.useState(false);
+  React.useEffect(() => {
+    setProfile(data.members.find((member) => member.slug === match.params.name));
+  }, [match.params.name]);
+
   if (!profile) return null;
 
   return (
