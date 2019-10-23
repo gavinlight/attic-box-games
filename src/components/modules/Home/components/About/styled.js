@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
 
   ${media.tablet`
     flex-direction: row;
-    margin-bottom: 80px;
+    margin: 80px 0;
   `}
 `;
 

@@ -9,13 +9,13 @@ import { HeaderContainer, LogoContainer, LogoText, LogoTextMobile } from './styl
 
 const Header = () => (
   <HeaderContainer>
-    <Anchor to="/" color="white">
-      <LogoContainer>
-        <Logo size="33px" />
+    <LogoContainer>
+      <Logo size="33px" />
+      <Anchor to="/" color="white">
         <LogoText>Attic Box Games</LogoText>
         <LogoTextMobile>ABG</LogoTextMobile>
-      </LogoContainer>
-    </Anchor>
+      </Anchor>
+    </LogoContainer>
     <Anchor to={data.seek} external color="white">
       Seek
     </Anchor>
