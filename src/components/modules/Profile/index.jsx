@@ -19,8 +19,10 @@ const Profile = ({ match }) => {
         quote={profile.quote}
         image={profile.image}
       />
-      <Links />
-      <About />
+      <Links links={profile.links} />
+      {profile.about && (
+        <About about={profile.about} />
+      )}
     </Page>
   );
 };
