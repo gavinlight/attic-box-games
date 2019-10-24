@@ -17,8 +17,11 @@ export default (p5) => {
     p5.fill(120);
     p5.lights();
 
-    p5.rotateX(p5.radians(70 + -(p5.mouseY * .01)));
-    p5.rotateY(p5.radians(0 + (p5.mouseX * .01)));
+    const newX = p5.radians(70 + -(p5.mouseY * .01));
+    const newY = p5.radians(0 + (p5.mouseX * .01));
+
+    p5.rotateX(newX);
+    p5.rotateY(newY);
     p5.rotateZ(p5.radians(20));
 
     p5.scale(2.5);
