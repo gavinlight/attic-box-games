@@ -10,12 +10,12 @@ import Profile from 'modules/Profile';
 const App = ({ location }) => (
   <main>
     <GlobalStyle />
-    <Loader path={location.pathname}>
-      <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/member/:name" component={Profile} exact />
-      </Switch>
-    </Loader>
+    {/* <Loader path={location.pathname}> */}
+    <Switch>
+      <Route path="/" component={Home} exact />
+      <Route path="/member/:name" component={Profile} exact />
+    </Switch>
+    {/* </Loader> */}
   </main>
 );
 
