@@ -4,6 +4,7 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 import GlobalStyle from 'styles';
 
 import Loader from 'common/Loader';
+import Home from 'modules/Home';
 import Profile from 'modules/Profile';
 
 const App = ({ location }) => (
@@ -11,6 +12,7 @@ const App = ({ location }) => (
     <GlobalStyle />
     <Loader path={location.pathname}>
       <Switch>
+        <Route path="/" component={Home} exact />
         <Route path="/member/:name" component={Profile} exact />
       </Switch>
     </Loader>
