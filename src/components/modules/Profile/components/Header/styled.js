@@ -58,8 +58,8 @@ export const Image = styled.div`
   height: 100px;
   background-color: ${(props) => props.theme.colors.grey.dark};
 
-  ${(props) => props.src && css`
-    background-image: url(${props.src});
+  ${(props) => props.image && css`
+    background-image: url(${props.image});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

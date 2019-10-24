@@ -19,7 +19,7 @@ export default (p5) => {
     p5.fill(120);
     p5.lights();
 
-    p5.rotateY(easeInOutQuad(2 + p5.sin(p5.frameCount * 0.01)));
+    p5.rotateY(2 + (p5.frameCount * 0.0420));
     p5.rotateX(p5.radians(55));
     p5.rotateY(p5.radians(45));
     p5.rotateZ(p5.radians(0));
